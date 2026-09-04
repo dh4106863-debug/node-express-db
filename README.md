@@ -15,40 +15,9 @@ Aplicación Backend desarrollada con **Node.js**, **Express** y **Sequelize ORM*
 
 El proyecto implementa una arquitectura modular limpia orientada en capas:
 
-node_express_db/
-├── node_modules/              # Dependencias instaladas del proyecto
-├── public/                    # Archivos estáticos servidos por Express
-│   ├── css/
-│   │   └── style.css          # Estilos CSS de la interfaz
-│   ├── js/
-│   │   └── main.js            # Lógica JavaScript del lado del cliente
-│   └── index.html             # Vista HTML principal
-├── src/                       # Código fuente de la aplicación backend
-│   ├── config/
-│   │   └── db.js              # Configuración y conexión a PostgreSQL con Sequelize
-│   ├── controllers/
-│   │   └── main.controller.js # Controladores HTTP (manejo de req y res)
-│   ├── logs/
-│   │   └── log.txt            # Registro persistente de eventos y errores
-│   ├── middlewares/
-│   │   └── logger.middleware.js # Middleware personalizado para registro de peticiones
-│   ├── models/
-│   │   ├── index.js           # Inicialización y definición de asociaciones entre modelos
-│   │   ├── pedido.js          # Modelo de datos de la entidad Pedido
-│   │   └── usuario.js         # Modelo de datos de la entidad Usuario
-│   ├── routes/
-│   │   └── main.routes.js     # Definición de los endpoints de la API REST
-│   ├── services/
-│   │   └── usuario.service.js # Lógica de negocio, consultas ORM y transacciones ACID
-│   └── utils/
-│       └── response.util.js   # Helper estandarizado para respuestas JSON
-├── .env                       # Variables de entorno confidenciales (no subido a Git)
-├── .env.example               # Plantilla de ejemplo para variables de entorno
-├── .gitignore                 # Archivos y carpetas excluidos del control de versiones
-├── app.js                     # Punto de entrada del servidor Express
-├── package-lock.json          # Árbol exacto de dependencias de npm
-├── package.json               # Configuración del proyecto y scripts de ejecución
-└── README.md                  # Documentación principal del proyecto
+<img width="3680" height="4736" alt="ray-so-export" src="https://github.com/user-attachments/assets/46c7a690-d74a-44b2-bec5-c2d4f9550bb4" />
+
+
 
 ## INTALACIONES PREVIAS
 # 1. Inicializar el proyecto 
@@ -106,12 +75,14 @@ POST '/usuarios/transferir'
 Lección 1: Conexión a Base de Datos
 ¿Por qué elegiste ese cliente de conexión? 
 Seleccione Sequelize debido a su capacidad para estructurar modelos orientados a objetos, gestionar migraciones y abstraer las consultas SQL de PostgreSQL de forma segura.  
+
 ¿Cómo se protegen los datos sensibles? 
 Las claves de acceso, host, puerto y nombre de la base de datos se encapsulan en un archivo .env mediante la librería dotenv. El archivo .env está excluido del control de versiones mediante .gitignore.  
 
 Lección 3: Modificación de Datos
 ¿Por qué decidiste actualizar solo ciertos campos? 
-Para mantener la integridad de la información; existen campos inmutables como la clave primaria id o la fecha de creación createdAt que no deben ser alterados manualmente en peticiones HTTP.  
+Para mantener la integridad de la información; existen campos inmutables como la clave primaria id o la fecha de creación createdAt que no deben ser alterados manualmente en peticiones HTTP. 
+
 ¿Qué validaciones aplicaste para evitar errores? 
 Se verifica que el registro exista antes de modificarlo o eliminarlo (404 Not Found) y se gestiona la restricción de unicidad (unique) en el campo email para evitar duplicados en la base de datos.  
 
