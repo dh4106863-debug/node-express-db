@@ -73,6 +73,33 @@ npm install -D nodemon
 
 # CAPTURAS ENDPOINT
 
+<img width="1009" height="280" alt="image" src="https://github.com/user-attachments/assets/2eece892-3a82-4dcf-9736-3a4aff149ebc" />
+
+GET '/USUARIOS'
+<img width="1005" height="530" alt="image" src="https://github.com/user-attachments/assets/ed46a9ce-958e-40f5-a880-a7ae947502c2" />
+
+<img width="1002" height="555" alt="image" src="https://github.com/user-attachments/assets/badad72b-5629-4867-a6d4-309cba8bb25a" />
+
+GET '/USUARIOS/:ID'
+
+<img width="1007" height="662" alt="image" src="https://github.com/user-attachments/assets/85e69b3e-8d9e-4357-beca-3b98466bfc04" />
+
+POST '/USUARIOS'
+
+<img width="996" height="466" alt="image" src="https://github.com/user-attachments/assets/1706de75-63f3-4e5f-abaf-7e3c04f34b86" />
+
+PUT '/USUARIOS/:ID'
+
+<img width="1008" height="661" alt="image" src="https://github.com/user-attachments/assets/37a403f5-0baa-4fc2-a986-05430f1fcfbc" />
+
+DELETE '/USUARIO/:ID'
+
+<img width="1014" height="660" alt="image" src="https://github.com/user-attachments/assets/d320cd9c-9640-4b5d-a58d-5a1a77e46923" />
+
+POST '/usuarios/transferir'
+
+<img width="1009" height="657" alt="image" src="https://github.com/user-attachments/assets/58884e7c-0d3e-4c84-b953-65ef3682d535" />
+
 
 
 # Justificaciones del ABP (Lecciones 1, 3 y 5)
